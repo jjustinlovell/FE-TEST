@@ -8,7 +8,7 @@ export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  function onLogin(e) {
+  const onLogin = (e) => {
     e.preventDefault();
     if (username === "user" && password === "user") {
       console.log("success");
