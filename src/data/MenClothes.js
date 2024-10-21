@@ -1,21 +1,33 @@
 const MenClothes = [
   {
-    path: "../../public/assets/images/P1.avif",
+    path: "/assets/images/P1.avif",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
   {
-    path: "../../public/assets/images/P2.avif",
+    path: "/assets/images/P2.avif",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
   {
-    path: "../../public/assets/images/P3.avig",
+    path: "/assets/images/P3.avig",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
   {
-    path: "../../public/assets/images/P4.avif",
+    path: "/assets/images/P4.avif",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
   {
-    path: "../../public/assets/images/P5.avif",
+    path: "/assets/images/P5.avif",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
   {
-    path: "../../public/assets/images/P6.avig",
+    path: "/assets/images/P6.avig",
+    title: "SUPIMA Cotton Crew Neck T-Shirt | Short Sleeve",
+    price: "Rp.199,000",
   },
 ];
 
