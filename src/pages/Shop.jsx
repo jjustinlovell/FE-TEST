@@ -15,12 +15,12 @@ export default function Shop() {
     <div className="my-20 md:px-20">
       <h1 className="text-3xl">Shop</h1>
       <div className="flex flex-wrap justify-start gap-6 mt-7">
-        <Button type="category">All</Button>
-        <Button type="category">Men</Button>
-        <Button type="category">Women</Button>
-        <Button type="category">Kids</Button>
+        <Button isActive={category === 'ALL'} onClick={() => setCategory("ALL")} type="category">All</Button>
+        <Button isActive={category === 'MEN'} onClick={() => setCategory("MEN")} type="category">Men</Button>
+        <Button isActive={category === 'WOMEN'} onClick={() => setCategory("WOMEN")} type="category">Women</Button>
+        <Button isActive={category === 'KIDS'} onClick={() => setCategory("KIDS")} type="category">Kids</Button>
       </div>
-      <div>
+      <div className="flex flex-wrap justify-center gap-12 mt-20">
         <ProductList selectedProducts={selectedCategory} />
       </div>
     </div>

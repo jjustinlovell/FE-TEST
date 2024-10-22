@@ -1,15 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Button({ children, to, type, onClick, disabled }) {
+export default function Button({
+  children,
+  to,
+  type,
+  onClick,
+  disabled,
+  isActive,
+}) {
   const base =
     "px-7 py-2 rounded-md transition-all duration-500 border border-black";
+
+  const isActiveBtn = "opacity-30";
+  const inActiveBtn = "bg-gray-100"
 
   const styles = {
     black: base + " bg-black text-white ",
     white: base + " bg-white text-black ",
-    category:
-      "px-6 py-1 transition-all bg-gray-100 rounded-full duration-400 hover:opacity-65",
+    category: `px-6 py-1 transition-all bg-gray-100 rounded-full duration-400 hover:opacity-65 ${
+      isActive ? isActiveBtn : inActiveBtn
+    }`,
   };
 
   if (to) {
