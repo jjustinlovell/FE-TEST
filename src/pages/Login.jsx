@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import Button from "../ui/Button";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ export default function Login() {
   const onLogin = (e) => {
     e.preventDefault();
     if (username === "user" && password === "user") {
-      localStorage.setItem('name', username)
+      localStorage.setItem("name", username);
       toast.success("Login Success");
       navigate("/dashboard");
     } else {
@@ -21,7 +22,7 @@ export default function Login() {
 
   return (
     <div className="grid h-screen place-items-center">
-      <div className="w-3/4 px-5 py-5 border border-black md:w-1/4">
+      <div className="w-3/4 px-5 py-5 border border-black md:w-1/2 lg:w-1/4">
         <h1 className="text-3xl">Login</h1>
         <form className="flex flex-col gap-5 mt-4">
           <div className="flex flex-col">
@@ -43,18 +44,12 @@ export default function Login() {
             />
           </div>
           <div className="flex gap-3">
-            <button
-              className="w-1/2 px-5 py-2 text-white bg-black rounded-md"
-              onClick={(e) => onLogin(e)}
-            >
+            <Button type="black" onClick={(e) => onLogin(e)}>
               Login
-            </button>
-            <button
-              disabled={true}
-              className="w-1/2 px-5 py-2 text-black bg-white border border-black rounded-md"
-            >
+            </Button>
+            <Button type="white" disabled={true}>
               Register
-            </button>
+            </Button>
           </div>
         </form>
       </div>

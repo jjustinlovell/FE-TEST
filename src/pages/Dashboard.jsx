@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Trending from "../ui/Trending";
+import Button from "../ui/Button";
 
 export default function Dashboard() {
   const username = localStorage.getItem("name");
@@ -10,12 +11,10 @@ export default function Dashboard() {
         <h1 className="text-3xl">
           Discover Your Unique Style with E-Commerce Website
         </h1>
-        <NavLink
-          to="/shop"
-          className="py-2 text-black transition-all duration-200 bg-white border border-black rounded-md w-36 hover:opacity-50"
-        >
+
+        <Button type="white" to="/shop">
           Shop Now
-        </NavLink>
+        </Button>
       </div>
       <div className="mt-32">
         <h1 className="text-3xl">Trending</h1>
@@ -28,7 +27,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div> */}
-        <Trending/>
+        <Trending />
       </div>
     </div>
   );
