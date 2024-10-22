@@ -6,7 +6,7 @@ export default function Header() {
   const linkStyle = ({isActive}) => `w-24 py-2 transition-all duration-500 ${isActive ? "bg-gray-200 rounded-sm" : ""}`
 
   return (
-    <nav className="white flex justify-center gap-5 border-b border-black py-5 items-center text-center">
+    <nav className="flex items-center justify-center gap-5 py-5 text-center white">
         <NavLink
           to="/dashboard"
           className={linkStyle}
