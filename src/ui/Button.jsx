@@ -10,7 +10,7 @@ export default function Button({
   isActive,
 }) {
   const base =
-    "md:px-7 px-3 py-2 rounded-md transition-all duration-500 border border-black";
+    "md:px-7 px-3 py-2 rounded-md transition-all duration-500 border border-black hover:opacity-50";
 
   const isActiveBtn = "opacity-30";
   const inActiveBtn = "bg-gray-100"
