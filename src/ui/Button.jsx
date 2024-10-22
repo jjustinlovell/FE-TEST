@@ -8,6 +8,8 @@ export default function Button({ children, to, type, onClick, disabled }) {
   const styles = {
     black: base + " bg-black text-white ",
     white: base + " bg-white text-black ",
+    category:
+      "px-6 py-1 transition-all bg-gray-100 rounded-full duration-400 hover:opacity-65",
   };
 
   if (to) {
