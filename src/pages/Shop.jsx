@@ -44,6 +44,8 @@ export default function Shop() {
           Kids
         </Button>
       </div>
+      <hr className="w-full mt-5" />
+
       <div className="flex flex-wrap justify-center gap-12 mt-20">
         <ProductList selectedProducts={selectedCategory} />
       </div>

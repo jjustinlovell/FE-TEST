@@ -32,7 +32,7 @@ const TrendingProduct = [
     price: "Rp.199,000",
   },
   {
-    path: "/assets/images/C1.avif",
+    path: "/assets/images/C2.avif",
     category: "WOMEN",
     name: "Summer Dress",
     price: "Rp.299,000",

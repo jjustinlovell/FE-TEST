@@ -33,8 +33,9 @@ export default function Dashboard() {
       </div>
       <div className="relative mt-32">
         <h1 className="text-3xl">Trending</h1>
+        <hr className="w-full mt-5"/>
         <div
-          className="flex gap-5 py-12 overflow-scroll hide-scrollbar scroll-smooth"
+          className="flex gap-5 py-8 overflow-scroll hide-scrollbar scroll-smooth"
           ref={scrollX}
         >
           <ProductList selectedProducts={TrendingProduct} />
