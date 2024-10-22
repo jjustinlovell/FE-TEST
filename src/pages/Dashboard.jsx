@@ -9,8 +9,8 @@ export default function Dashboard() {
   const username = localStorage.getItem("name");
   return (
     <div className="my-20 md:px-20">
-      <div className="flex flex-col items-center gap-5 mt-32 text-center">
-        <h1 className="text-3xl">
+      <div className="flex flex-col items-center justify-center gap-5 mt-32 text-center align-middle h-52 bg-neutral-100">
+        <h1 className="text-xl md:text-3xl">
           Discover Your Unique Style with E-Commerce Website
         </h1>
 
