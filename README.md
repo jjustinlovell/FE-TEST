@@ -3,3 +3,6 @@
 - cd FE-TEST
 - npm install
 - npm run dev
+- Login
+- Username : user
+- password : user
